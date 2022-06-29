@@ -12,15 +12,15 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
     "command": {
       "type": "string",
       "required": true,
       "unique": true,
       "regex": "^\\S+$"
-    },
-    "title": {
-      "type": "string",
-      "required": true
     },
     "isActive": {
       "type": "boolean",
