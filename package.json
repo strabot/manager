@@ -31,5 +31,9 @@
     "node": ">=12.x.x <=16.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gabrielrufino/strabot-manager/issues"
+  },
+  "homepage": "https://github.com/gabrielrufino/strabot-manager#readme"
 }
