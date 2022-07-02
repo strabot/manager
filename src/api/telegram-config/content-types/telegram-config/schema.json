@@ -20,6 +20,16 @@
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "Direct_chats": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Group_chats": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }
