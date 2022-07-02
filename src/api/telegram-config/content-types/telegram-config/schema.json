@@ -4,7 +4,8 @@
   "info": {
     "singularName": "telegram-config",
     "pluralName": "telegram-configs",
-    "displayName": "Telegram Config"
+    "displayName": "Telegram Config",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -13,6 +14,11 @@
   "attributes": {
     "Token": {
       "type": "string",
+      "required": true
+    },
+    "Active": {
+      "type": "boolean",
+      "default": false,
       "required": true
     }
   }

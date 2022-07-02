@@ -4,18 +4,19 @@
   "info": {
     "singularName": "message",
     "pluralName": "messages",
-    "displayName": "Message"
+    "displayName": "Message",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "Name": {
       "type": "string",
       "required": true
     },
-    "text": {
+    "Text": {
       "type": "richtext",
       "required": true
     },
