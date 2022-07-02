@@ -26,6 +26,12 @@
       "type": "boolean",
       "default": true,
       "required": true
+    },
+    "messages": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::message.message",
+      "inversedBy": "commands"
     }
   }
 }
