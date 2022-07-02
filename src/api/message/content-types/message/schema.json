@@ -25,6 +25,12 @@
       "relation": "manyToMany",
       "target": "api::command.command",
       "inversedBy": "Messages"
+    },
+    "Events": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::event.event",
+      "inversedBy": "Messages"
     }
   }
 }
