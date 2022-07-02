@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "telegram_configs",
+  "info": {
+    "singularName": "telegram-config",
+    "pluralName": "telegram-configs",
+    "displayName": "Telegram Config"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Token": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
