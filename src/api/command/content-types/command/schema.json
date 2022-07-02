@@ -12,10 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
-      "type": "string",
-      "required": true
-    },
     "command": {
       "type": "string",
       "required": true,
@@ -32,6 +28,9 @@
       "relation": "manyToMany",
       "target": "api::message.message",
       "inversedBy": "commands"
+    },
+    "description": {
+      "type": "text"
     }
   }
 }

@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-07-02T13:41:55.354Z"
+    "x-generation-date": "2022-07-02T14:11:28.974Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -95,15 +95,11 @@
         "properties": {
           "data": {
             "required": [
-              "title",
               "command",
               "isActive"
             ],
             "type": "object",
             "properties": {
-              "title": {
-                "type": "string"
-              },
               "command": {
                 "type": "string"
               },
@@ -123,6 +119,9 @@
                   ],
                   "example": "string or id"
                 }
+              },
+              "description": {
+                "type": "string"
               }
             }
           }
@@ -142,9 +141,6 @@
                 "attributes": {
                   "type": "object",
                   "properties": {
-                    "title": {
-                      "type": "string"
-                    },
                     "command": {
                       "type": "string"
                     },
@@ -185,9 +181,6 @@
                                             "attributes": {
                                               "type": "object",
                                               "properties": {
-                                                "title": {
-                                                  "type": "string"
-                                                },
                                                 "command": {
                                                   "type": "string"
                                                 },
@@ -213,6 +206,9 @@
                                                       }
                                                     }
                                                   }
+                                                },
+                                                "description": {
+                                                  "type": "string"
                                                 },
                                                 "createdAt": {
                                                   "type": "string",
@@ -571,6 +567,9 @@
                         }
                       }
                     },
+                    "description": {
+                      "type": "string"
+                    },
                     "createdAt": {
                       "type": "string",
                       "format": "date-time"
@@ -659,9 +658,6 @@
               "attributes": {
                 "type": "object",
                 "properties": {
-                  "title": {
-                    "type": "string"
-                  },
                   "command": {
                     "type": "string"
                   },
@@ -702,9 +698,6 @@
                                           "attributes": {
                                             "type": "object",
                                             "properties": {
-                                              "title": {
-                                                "type": "string"
-                                              },
                                               "command": {
                                                 "type": "string"
                                               },
@@ -730,6 +723,9 @@
                                                     }
                                                   }
                                                 }
+                                              },
+                                              "description": {
+                                                "type": "string"
                                               },
                                               "createdAt": {
                                                 "type": "string",
@@ -1088,6 +1084,9 @@
                       }
                     }
                   },
+                  "description": {
+                    "type": "string"
+                  },
                   "createdAt": {
                     "type": "string",
                     "format": "date-time"
@@ -1214,9 +1213,6 @@
                               "attributes": {
                                 "type": "object",
                                 "properties": {
-                                  "title": {
-                                    "type": "string"
-                                  },
                                   "command": {
                                     "type": "string"
                                   },
@@ -1567,6 +1563,9 @@
                                       }
                                     }
                                   },
+                                  "description": {
+                                    "type": "string"
+                                  },
                                   "createdAt": {
                                     "type": "string",
                                     "format": "date-time"
@@ -1728,9 +1727,6 @@
                             "attributes": {
                               "type": "object",
                               "properties": {
-                                "title": {
-                                  "type": "string"
-                                },
                                 "command": {
                                   "type": "string"
                                 },
@@ -2080,6 +2076,9 @@
                                       }
                                     }
                                   }
+                                },
+                                "description": {
+                                  "type": "string"
                                 },
                                 "createdAt": {
                                   "type": "string",

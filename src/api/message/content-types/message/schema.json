@@ -23,7 +23,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::command.command",
-      "inversedBy": "messages"
+      "mappedBy": "messages"
     }
   }
 }
