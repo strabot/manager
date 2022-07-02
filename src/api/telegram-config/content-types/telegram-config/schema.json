@@ -12,13 +12,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Token": {
-      "type": "string",
-      "required": true
-    },
     "Active": {
       "type": "boolean",
       "default": false,
+      "required": true
+    },
+    "Token": {
+      "type": "string",
       "required": true
     },
     "Direct_chats": {

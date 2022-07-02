@@ -18,19 +18,14 @@
       "unique": true,
       "regex": "^\\S+$"
     },
-    "Active": {
-      "type": "boolean",
-      "default": true,
-      "required": true
+    "Description": {
+      "type": "text"
     },
-    "messages": {
+    "Messages": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::message.message",
-      "inversedBy": "commands"
-    },
-    "Description": {
-      "type": "text"
+      "inversedBy": "Commands"
     }
   }
 }

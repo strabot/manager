@@ -20,11 +20,11 @@
       "type": "richtext",
       "required": true
     },
-    "commands": {
+    "Commands": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::command.command",
-      "mappedBy": "messages"
+      "inversedBy": "Messages"
     }
   }
 }

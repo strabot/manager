@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-07-02T18:29:51.351Z"
+    "x-generation-date": "2022-07-02T18:44:29.155Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -95,18 +95,17 @@
         "properties": {
           "data": {
             "required": [
-              "Command",
-              "Active"
+              "Command"
             ],
             "type": "object",
             "properties": {
               "Command": {
                 "type": "string"
               },
-              "Active": {
-                "type": "boolean"
+              "Description": {
+                "type": "string"
               },
-              "messages": {
+              "Messages": {
                 "type": "array",
                 "items": {
                   "oneOf": [
@@ -119,9 +118,6 @@
                   ],
                   "example": "string or id"
                 }
-              },
-              "Description": {
-                "type": "string"
               }
             }
           }
@@ -144,10 +140,10 @@
                     "Command": {
                       "type": "string"
                     },
-                    "Active": {
-                      "type": "boolean"
+                    "Description": {
+                      "type": "string"
                     },
-                    "messages": {
+                    "Messages": {
                       "type": "object",
                       "properties": {
                         "data": {
@@ -167,7 +163,7 @@
                                   "Text": {
                                     "type": "string"
                                   },
-                                  "commands": {
+                                  "Commands": {
                                     "type": "object",
                                     "properties": {
                                       "data": {
@@ -184,10 +180,10 @@
                                                 "Command": {
                                                   "type": "string"
                                                 },
-                                                "Active": {
-                                                  "type": "boolean"
+                                                "Description": {
+                                                  "type": "string"
                                                 },
-                                                "messages": {
+                                                "Messages": {
                                                   "type": "object",
                                                   "properties": {
                                                     "data": {
@@ -206,9 +202,6 @@
                                                       }
                                                     }
                                                   }
-                                                },
-                                                "Description": {
-                                                  "type": "string"
                                                 },
                                                 "createdAt": {
                                                   "type": "string",
@@ -567,9 +560,6 @@
                         }
                       }
                     },
-                    "Description": {
-                      "type": "string"
-                    },
                     "createdAt": {
                       "type": "string",
                       "format": "date-time"
@@ -661,10 +651,10 @@
                   "Command": {
                     "type": "string"
                   },
-                  "Active": {
-                    "type": "boolean"
+                  "Description": {
+                    "type": "string"
                   },
-                  "messages": {
+                  "Messages": {
                     "type": "object",
                     "properties": {
                       "data": {
@@ -684,7 +674,7 @@
                                 "Text": {
                                   "type": "string"
                                 },
-                                "commands": {
+                                "Commands": {
                                   "type": "object",
                                   "properties": {
                                     "data": {
@@ -701,10 +691,10 @@
                                               "Command": {
                                                 "type": "string"
                                               },
-                                              "Active": {
-                                                "type": "boolean"
+                                              "Description": {
+                                                "type": "string"
                                               },
-                                              "messages": {
+                                              "Messages": {
                                                 "type": "object",
                                                 "properties": {
                                                   "data": {
@@ -723,9 +713,6 @@
                                                     }
                                                   }
                                                 }
-                                              },
-                                              "Description": {
-                                                "type": "string"
                                               },
                                               "createdAt": {
                                                 "type": "string",
@@ -1084,9 +1071,6 @@
                       }
                     }
                   },
-                  "Description": {
-                    "type": "string"
-                  },
                   "createdAt": {
                     "type": "string",
                     "format": "date-time"
@@ -1161,7 +1145,7 @@
               "Text": {
                 "type": "string"
               },
-              "commands": {
+              "Commands": {
                 "type": "array",
                 "items": {
                   "oneOf": [
@@ -1199,7 +1183,7 @@
                     "Text": {
                       "type": "string"
                     },
-                    "commands": {
+                    "Commands": {
                       "type": "object",
                       "properties": {
                         "data": {
@@ -1216,10 +1200,10 @@
                                   "Command": {
                                     "type": "string"
                                   },
-                                  "Active": {
-                                    "type": "boolean"
+                                  "Description": {
+                                    "type": "string"
                                   },
-                                  "messages": {
+                                  "Messages": {
                                     "type": "object",
                                     "properties": {
                                       "data": {
@@ -1239,7 +1223,7 @@
                                                 "Text": {
                                                   "type": "string"
                                                 },
-                                                "commands": {
+                                                "Commands": {
                                                   "type": "object",
                                                   "properties": {
                                                     "data": {
@@ -1563,9 +1547,6 @@
                                       }
                                     }
                                   },
-                                  "Description": {
-                                    "type": "string"
-                                  },
                                   "createdAt": {
                                     "type": "string",
                                     "format": "date-time"
@@ -1713,7 +1694,7 @@
                   "Text": {
                     "type": "string"
                   },
-                  "commands": {
+                  "Commands": {
                     "type": "object",
                     "properties": {
                       "data": {
@@ -1730,10 +1711,10 @@
                                 "Command": {
                                   "type": "string"
                                 },
-                                "Active": {
-                                  "type": "boolean"
+                                "Description": {
+                                  "type": "string"
                                 },
-                                "messages": {
+                                "Messages": {
                                   "type": "object",
                                   "properties": {
                                     "data": {
@@ -1753,7 +1734,7 @@
                                               "Text": {
                                                 "type": "string"
                                               },
-                                              "commands": {
+                                              "Commands": {
                                                 "type": "object",
                                                 "properties": {
                                                   "data": {
@@ -2076,9 +2057,6 @@
                                       }
                                     }
                                   }
-                                },
-                                "Description": {
-                                  "type": "string"
                                 },
                                 "createdAt": {
                                   "type": "string",
@@ -2880,18 +2858,18 @@
         "properties": {
           "data": {
             "required": [
-              "Token",
               "Active",
+              "Token",
               "Direct_chats",
               "Group_chats"
             ],
             "type": "object",
             "properties": {
-              "Token": {
-                "type": "string"
-              },
               "Active": {
                 "type": "boolean"
+              },
+              "Token": {
+                "type": "string"
               },
               "Direct_chats": {
                 "type": "boolean"
@@ -2917,11 +2895,11 @@
                 "attributes": {
                   "type": "object",
                   "properties": {
-                    "Token": {
-                      "type": "string"
-                    },
                     "Active": {
                       "type": "boolean"
+                    },
+                    "Token": {
+                      "type": "string"
                     },
                     "Direct_chats": {
                       "type": "boolean"
@@ -3264,11 +3242,11 @@
               "attributes": {
                 "type": "object",
                 "properties": {
-                  "Token": {
-                    "type": "string"
-                  },
                   "Active": {
                     "type": "boolean"
+                  },
+                  "Token": {
+                    "type": "string"
                   },
                   "Direct_chats": {
                     "type": "boolean"
