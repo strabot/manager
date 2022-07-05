@@ -15,6 +15,12 @@
     "Question": {
       "type": "text",
       "required": true
+    },
+    "Schedules": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::schedule.schedule",
+      "inversedBy": "Quizzes"
     }
   }
 }

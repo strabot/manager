@@ -31,6 +31,12 @@
       "relation": "manyToMany",
       "target": "api::event.event",
       "inversedBy": "Messages"
+    },
+    "Schedules": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::schedule.schedule",
+      "inversedBy": "Messages"
     }
   }
 }
