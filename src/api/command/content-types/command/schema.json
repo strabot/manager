@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "commands",
+  "info": {
+    "singularName": "command",
+    "pluralName": "commands",
+    "displayName": "Command",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Command": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "regex": "^\\S+$"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Messages": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::message.message",
+      "inversedBy": "Commands"
+    }
+  }
+}

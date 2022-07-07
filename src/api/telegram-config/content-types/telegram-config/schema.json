@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "telegram_configs",
+  "info": {
+    "singularName": "telegram-config",
+    "pluralName": "telegram-configs",
+    "displayName": "Telegram Config",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Active": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Token": {
+      "type": "string",
+      "required": true
+    },
+    "Direct_chats": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Group_chats": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}
