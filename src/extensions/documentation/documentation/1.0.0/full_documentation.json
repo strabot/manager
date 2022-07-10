@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-07-10T13:47:06.294Z"
+    "x-generation-date": "2022-07-10T13:48:44.342Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -95,14 +95,14 @@
         "properties": {
           "data": {
             "required": [
-              "Chat_ID",
-              "Platform",
               "Name",
-              "Type"
+              "Platform",
+              "Type",
+              "Chat_ID"
             ],
             "type": "object",
             "properties": {
-              "Chat_ID": {
+              "Name": {
                 "type": "string"
               },
               "Platform": {
@@ -111,15 +111,15 @@
                   "Telegram"
                 ]
               },
-              "Name": {
-                "type": "string"
-              },
               "Type": {
                 "type": "string",
                 "enum": [
                   "Group",
                   "Private"
                 ]
+              },
+              "Chat_ID": {
+                "type": "string"
               }
             }
           }
@@ -139,7 +139,7 @@
                 "attributes": {
                   "type": "object",
                   "properties": {
-                    "Chat_ID": {
+                    "Name": {
                       "type": "string"
                     },
                     "Platform": {
@@ -148,15 +148,15 @@
                         "Telegram"
                       ]
                     },
-                    "Name": {
-                      "type": "string"
-                    },
                     "Type": {
                       "type": "string",
                       "enum": [
                         "Group",
                         "Private"
                       ]
+                    },
+                    "Chat_ID": {
+                      "type": "string"
                     },
                     "createdAt": {
                       "type": "string",
@@ -497,7 +497,7 @@
               "attributes": {
                 "type": "object",
                 "properties": {
-                  "Chat_ID": {
+                  "Name": {
                     "type": "string"
                   },
                   "Platform": {
@@ -506,15 +506,15 @@
                       "Telegram"
                     ]
                   },
-                  "Name": {
-                    "type": "string"
-                  },
                   "Type": {
                     "type": "string",
                     "enum": [
                       "Group",
                       "Private"
                     ]
+                  },
+                  "Chat_ID": {
+                    "type": "string"
                   },
                   "createdAt": {
                     "type": "string",

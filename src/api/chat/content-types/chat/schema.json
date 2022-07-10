@@ -12,20 +12,15 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Chat_ID": {
+    "Name": {
       "type": "string",
-      "required": true,
-      "unique": true
+      "required": true
     },
     "Platform": {
       "type": "enumeration",
       "enum": [
         "Telegram"
       ],
-      "required": true
-    },
-    "Name": {
-      "type": "string",
       "required": true
     },
     "Type": {
@@ -35,6 +30,11 @@
         "Private"
       ],
       "required": true
+    },
+    "Chat_ID": {
+      "type": "string",
+      "required": true,
+      "unique": true
     }
   }
 }
