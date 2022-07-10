@@ -21,7 +21,7 @@
       "type": "string",
       "required": true
     },
-    "Direct_chats": {
+    "Private_chats": {
       "type": "boolean",
       "default": false,
       "required": true
