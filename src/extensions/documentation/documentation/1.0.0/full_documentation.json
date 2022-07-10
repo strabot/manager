@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-07-09T19:35:44.482Z"
+    "x-generation-date": "2022-07-10T13:47:06.294Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -96,7 +96,9 @@
           "data": {
             "required": [
               "Chat_ID",
-              "Platform"
+              "Platform",
+              "Name",
+              "Type"
             ],
             "type": "object",
             "properties": {
@@ -107,6 +109,16 @@
                 "type": "string",
                 "enum": [
                   "Telegram"
+                ]
+              },
+              "Name": {
+                "type": "string"
+              },
+              "Type": {
+                "type": "string",
+                "enum": [
+                  "Group",
+                  "Private"
                 ]
               }
             }
@@ -134,6 +146,16 @@
                       "type": "string",
                       "enum": [
                         "Telegram"
+                      ]
+                    },
+                    "Name": {
+                      "type": "string"
+                    },
+                    "Type": {
+                      "type": "string",
+                      "enum": [
+                        "Group",
+                        "Private"
                       ]
                     },
                     "createdAt": {
@@ -482,6 +504,16 @@
                     "type": "string",
                     "enum": [
                       "Telegram"
+                    ]
+                  },
+                  "Name": {
+                    "type": "string"
+                  },
+                  "Type": {
+                    "type": "string",
+                    "enum": [
+                      "Group",
+                      "Private"
                     ]
                   },
                   "createdAt": {

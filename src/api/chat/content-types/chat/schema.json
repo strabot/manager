@@ -23,6 +23,18 @@
         "Telegram"
       ],
       "required": true
+    },
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Group",
+        "Private"
+      ],
+      "required": true
     }
   }
 }
