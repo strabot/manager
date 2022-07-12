@@ -4,7 +4,8 @@
   "info": {
     "singularName": "schedule",
     "pluralName": "schedules",
-    "displayName": "Schedule"
+    "displayName": "Schedule",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -37,6 +38,21 @@
       "relation": "manyToMany",
       "target": "api::quiz.quiz",
       "inversedBy": "Schedules"
+    },
+    "Discord": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Slack": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Telegram": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }

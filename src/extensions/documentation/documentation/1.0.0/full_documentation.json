@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-07-10T14:10:00.882Z"
+    "x-generation-date": "2022-07-12T10:11:46.041Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -830,7 +830,10 @@
         "properties": {
           "data": {
             "required": [
-              "Command"
+              "Command",
+              "Discord",
+              "Slack",
+              "Telegram"
             ],
             "type": "object",
             "properties": {
@@ -853,6 +856,15 @@
                   ],
                   "example": "string or id"
                 }
+              },
+              "Discord": {
+                "type": "boolean"
+              },
+              "Slack": {
+                "type": "boolean"
+              },
+              "Telegram": {
+                "type": "boolean"
               }
             }
           }
@@ -937,6 +949,15 @@
                                                       }
                                                     }
                                                   }
+                                                },
+                                                "Discord": {
+                                                  "type": "boolean"
+                                                },
+                                                "Slack": {
+                                                  "type": "boolean"
+                                                },
+                                                "Telegram": {
+                                                  "type": "boolean"
                                                 },
                                                 "createdAt": {
                                                   "type": "string",
@@ -1469,6 +1490,15 @@
                                                     }
                                                   }
                                                 },
+                                                "Discord": {
+                                                  "type": "boolean"
+                                                },
+                                                "Slack": {
+                                                  "type": "boolean"
+                                                },
+                                                "Telegram": {
+                                                  "type": "boolean"
+                                                },
                                                 "createdAt": {
                                                   "type": "string",
                                                   "format": "date-time"
@@ -1574,6 +1604,15 @@
                           }
                         }
                       }
+                    },
+                    "Discord": {
+                      "type": "boolean"
+                    },
+                    "Slack": {
+                      "type": "boolean"
+                    },
+                    "Telegram": {
+                      "type": "boolean"
                     },
                     "createdAt": {
                       "type": "string",
@@ -1728,6 +1767,15 @@
                                                     }
                                                   }
                                                 }
+                                              },
+                                              "Discord": {
+                                                "type": "boolean"
+                                              },
+                                              "Slack": {
+                                                "type": "boolean"
+                                              },
+                                              "Telegram": {
+                                                "type": "boolean"
                                               },
                                               "createdAt": {
                                                 "type": "string",
@@ -2260,6 +2308,15 @@
                                                   }
                                                 }
                                               },
+                                              "Discord": {
+                                                "type": "boolean"
+                                              },
+                                              "Slack": {
+                                                "type": "boolean"
+                                              },
+                                              "Telegram": {
+                                                "type": "boolean"
+                                              },
                                               "createdAt": {
                                                 "type": "string",
                                                 "format": "date-time"
@@ -2365,6 +2422,15 @@
                         }
                       }
                     }
+                  },
+                  "Discord": {
+                    "type": "boolean"
+                  },
+                  "Slack": {
+                    "type": "boolean"
+                  },
+                  "Telegram": {
+                    "type": "boolean"
                   },
                   "createdAt": {
                     "type": "string",
@@ -3227,6 +3293,15 @@
                                                     }
                                                   }
                                                 },
+                                                "Discord": {
+                                                  "type": "boolean"
+                                                },
+                                                "Slack": {
+                                                  "type": "boolean"
+                                                },
+                                                "Telegram": {
+                                                  "type": "boolean"
+                                                },
                                                 "createdAt": {
                                                   "type": "string",
                                                   "format": "date-time"
@@ -3758,6 +3833,15 @@
                                                     }
                                                   }
                                                 },
+                                                "Discord": {
+                                                  "type": "boolean"
+                                                },
+                                                "Slack": {
+                                                  "type": "boolean"
+                                                },
+                                                "Telegram": {
+                                                  "type": "boolean"
+                                                },
                                                 "createdAt": {
                                                   "type": "string",
                                                   "format": "date-time"
@@ -4014,6 +4098,15 @@
                                                     }
                                                   }
                                                 }
+                                              },
+                                              "Discord": {
+                                                "type": "boolean"
+                                              },
+                                              "Slack": {
+                                                "type": "boolean"
+                                              },
+                                              "Telegram": {
+                                                "type": "boolean"
                                               },
                                               "createdAt": {
                                                 "type": "string",
@@ -4545,6 +4638,15 @@
                                                     }
                                                   }
                                                 }
+                                              },
+                                              "Discord": {
+                                                "type": "boolean"
+                                              },
+                                              "Slack": {
+                                                "type": "boolean"
+                                              },
+                                              "Telegram": {
+                                                "type": "boolean"
                                               },
                                               "createdAt": {
                                                 "type": "string",
@@ -5330,6 +5432,15 @@
                                                                   }
                                                                 }
                                                               },
+                                                              "Discord": {
+                                                                "type": "boolean"
+                                                              },
+                                                              "Slack": {
+                                                                "type": "boolean"
+                                                              },
+                                                              "Telegram": {
+                                                                "type": "boolean"
+                                                              },
                                                               "createdAt": {
                                                                 "type": "string",
                                                                 "format": "date-time"
@@ -5435,6 +5546,15 @@
                                         }
                                       }
                                     }
+                                  },
+                                  "Discord": {
+                                    "type": "boolean"
+                                  },
+                                  "Slack": {
+                                    "type": "boolean"
+                                  },
+                                  "Telegram": {
+                                    "type": "boolean"
                                   },
                                   "createdAt": {
                                     "type": "string",
@@ -6161,6 +6281,15 @@
                                                                 }
                                                               }
                                                             },
+                                                            "Discord": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "Slack": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "Telegram": {
+                                                              "type": "boolean"
+                                                            },
                                                             "createdAt": {
                                                               "type": "string",
                                                               "format": "date-time"
@@ -6266,6 +6395,15 @@
                                       }
                                     }
                                   }
+                                },
+                                "Discord": {
+                                  "type": "boolean"
+                                },
+                                "Slack": {
+                                  "type": "boolean"
+                                },
+                                "Telegram": {
+                                  "type": "boolean"
                                 },
                                 "createdAt": {
                                   "type": "string",
@@ -6551,6 +6689,15 @@
                                                                     }
                                                                   }
                                                                 }
+                                                              },
+                                                              "Discord": {
+                                                                "type": "boolean"
+                                                              },
+                                                              "Slack": {
+                                                                "type": "boolean"
+                                                              },
+                                                              "Telegram": {
+                                                                "type": "boolean"
                                                               },
                                                               "createdAt": {
                                                                 "type": "string",
@@ -7109,6 +7256,15 @@
                                       }
                                     }
                                   },
+                                  "Discord": {
+                                    "type": "boolean"
+                                  },
+                                  "Slack": {
+                                    "type": "boolean"
+                                  },
+                                  "Telegram": {
+                                    "type": "boolean"
+                                  },
                                   "createdAt": {
                                     "type": "string",
                                     "format": "date-time"
@@ -7339,6 +7495,15 @@
                                                                   }
                                                                 }
                                                               }
+                                                            },
+                                                            "Discord": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "Slack": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "Telegram": {
+                                                              "type": "boolean"
                                                             },
                                                             "createdAt": {
                                                               "type": "string",
@@ -7897,6 +8062,15 @@
                                     }
                                   }
                                 },
+                                "Discord": {
+                                  "type": "boolean"
+                                },
+                                "Slack": {
+                                  "type": "boolean"
+                                },
+                                "Telegram": {
+                                  "type": "boolean"
+                                },
                                 "createdAt": {
                                   "type": "string",
                                   "format": "date-time"
@@ -8013,7 +8187,10 @@
         "properties": {
           "data": {
             "required": [
-              "Recurrent"
+              "Recurrent",
+              "Discord",
+              "Slack",
+              "Telegram"
             ],
             "type": "object",
             "properties": {
@@ -8057,6 +8234,15 @@
                   ],
                   "example": "string or id"
                 }
+              },
+              "Discord": {
+                "type": "boolean"
+              },
+              "Slack": {
+                "type": "boolean"
+              },
+              "Telegram": {
+                "type": "boolean"
               }
             }
           }
@@ -8148,6 +8334,15 @@
                                                       }
                                                     }
                                                   }
+                                                },
+                                                "Discord": {
+                                                  "type": "boolean"
+                                                },
+                                                "Slack": {
+                                                  "type": "boolean"
+                                                },
+                                                "Telegram": {
+                                                  "type": "boolean"
                                                 },
                                                 "createdAt": {
                                                   "type": "string",
@@ -8680,6 +8875,15 @@
                                                     }
                                                   }
                                                 },
+                                                "Discord": {
+                                                  "type": "boolean"
+                                                },
+                                                "Slack": {
+                                                  "type": "boolean"
+                                                },
+                                                "Telegram": {
+                                                  "type": "boolean"
+                                                },
                                                 "createdAt": {
                                                   "type": "string",
                                                   "format": "date-time"
@@ -8805,6 +9009,15 @@
                           }
                         }
                       }
+                    },
+                    "Discord": {
+                      "type": "boolean"
+                    },
+                    "Slack": {
+                      "type": "boolean"
+                    },
+                    "Telegram": {
+                      "type": "boolean"
                     },
                     "createdAt": {
                       "type": "string",
@@ -8966,6 +9179,15 @@
                                                     }
                                                   }
                                                 }
+                                              },
+                                              "Discord": {
+                                                "type": "boolean"
+                                              },
+                                              "Slack": {
+                                                "type": "boolean"
+                                              },
+                                              "Telegram": {
+                                                "type": "boolean"
                                               },
                                               "createdAt": {
                                                 "type": "string",
@@ -9498,6 +9720,15 @@
                                                   }
                                                 }
                                               },
+                                              "Discord": {
+                                                "type": "boolean"
+                                              },
+                                              "Slack": {
+                                                "type": "boolean"
+                                              },
+                                              "Telegram": {
+                                                "type": "boolean"
+                                              },
                                               "createdAt": {
                                                 "type": "string",
                                                 "format": "date-time"
@@ -9623,6 +9854,15 @@
                         }
                       }
                     }
+                  },
+                  "Discord": {
+                    "type": "boolean"
+                  },
+                  "Slack": {
+                    "type": "boolean"
+                  },
+                  "Telegram": {
+                    "type": "boolean"
                   },
                   "createdAt": {
                     "type": "string",

@@ -26,6 +26,21 @@
       "relation": "manyToMany",
       "target": "api::message.message",
       "inversedBy": "Commands"
+    },
+    "Discord": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Slack": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Telegram": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }

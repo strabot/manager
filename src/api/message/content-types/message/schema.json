@@ -24,7 +24,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::command.command",
-      "inversedBy": "Messages"
+      "mappedBy": "Messages"
     },
     "Events": {
       "type": "relation",
@@ -36,7 +36,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::schedule.schedule",
-      "inversedBy": "Messages"
+      "mappedBy": "Messages"
     }
   }
 }
