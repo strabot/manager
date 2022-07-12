@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_general_options",
+  "info": {
+    "displayName": "Option"
+  },
+  "options": {},
+  "attributes": {
+    "Value": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

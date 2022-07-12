@@ -47,6 +47,12 @@
       "relation": "manyToMany",
       "target": "api::quiz.quiz",
       "mappedBy": "Commands"
+    },
+    "Surveys": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::survey.survey",
+      "inversedBy": "Commands"
     }
   }
 }
