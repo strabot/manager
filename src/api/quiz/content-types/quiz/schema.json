@@ -21,6 +21,19 @@
       "relation": "manyToMany",
       "target": "api::schedule.schedule",
       "mappedBy": "Quizzes"
+    },
+    "Commands": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::command.command",
+      "inversedBy": "Quizzes"
+    },
+    "Answers": {
+      "displayName": "Answer",
+      "type": "component",
+      "repeatable": true,
+      "component": "general.answer",
+      "required": true
     }
   }
 }

@@ -41,6 +41,12 @@
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "Quizzes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::quiz.quiz",
+      "mappedBy": "Commands"
     }
   }
 }
