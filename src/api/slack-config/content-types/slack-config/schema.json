@@ -4,7 +4,8 @@
   "info": {
     "singularName": "slack-config",
     "pluralName": "slack-configs",
-    "displayName": "Slack config"
+    "displayName": "Slack config",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -24,6 +25,12 @@
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "Greetings": {
+      "displayName": "Greeting",
+      "type": "component",
+      "repeatable": false,
+      "component": "general.greeting"
     }
   }
 }

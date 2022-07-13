@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_general_greetings",
+  "info": {
+    "displayName": "Greetings",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Messages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::message.message"
+    },
+    "Quizzes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::quiz.quiz"
+    },
+    "Surveys": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::survey.survey"
+    }
+  }
+}
