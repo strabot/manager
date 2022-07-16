@@ -12,6 +12,10 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "Label": {
+      "type": "string",
+      "required": true
+    },
     "Question": {
       "type": "text",
       "required": true
@@ -41,7 +45,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::command.command",
-      "inversedBy": "Surveys"
+      "mappedBy": "Surveys"
     },
     "Schedules": {
       "type": "relation",

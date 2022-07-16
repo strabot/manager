@@ -21,6 +21,10 @@
       "type": "string",
       "required": true
     },
+    "Username": {
+      "type": "string",
+      "required": false
+    },
     "Private_chats": {
       "type": "boolean",
       "default": false,
@@ -35,10 +39,6 @@
       "type": "component",
       "repeatable": false,
       "component": "general.greeting"
-    },
-    "Username": {
-      "type": "string",
-      "required": false
     }
   }
 }

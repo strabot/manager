@@ -12,8 +12,19 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "Label": {
+      "type": "string",
+      "required": true
+    },
     "Question": {
       "type": "text",
+      "required": true
+    },
+    "Answers": {
+      "displayName": "Answer",
+      "type": "component",
+      "repeatable": true,
+      "component": "general.answer",
       "required": true
     },
     "Schedules": {
@@ -27,13 +38,6 @@
       "relation": "manyToMany",
       "target": "api::command.command",
       "inversedBy": "Quizzes"
-    },
-    "Answers": {
-      "displayName": "Answer",
-      "type": "component",
-      "repeatable": true,
-      "component": "general.answer",
-      "required": true
     }
   }
 }

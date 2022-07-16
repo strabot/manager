@@ -12,6 +12,9 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "Label": {
+      "type": "string"
+    },
     "Recurrent": {
       "type": "boolean",
       "default": false,
@@ -23,21 +26,6 @@
     },
     "Cron": {
       "type": "string"
-    },
-    "Label": {
-      "type": "string"
-    },
-    "Messages": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::message.message",
-      "inversedBy": "Schedules"
-    },
-    "Quizzes": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::quiz.quiz",
-      "inversedBy": "Schedules"
     },
     "Discord": {
       "type": "boolean",
@@ -54,11 +42,23 @@
       "default": false,
       "required": true
     },
+    "Messages": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::message.message",
+      "inversedBy": "Schedules"
+    },
+    "Quizzes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::quiz.quiz",
+      "inversedBy": "Schedules"
+    },
     "Surveys": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::survey.survey",
-      "inversedBy": "Schedules"
+      "mappedBy": "Schedules"
     }
   }
 }

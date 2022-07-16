@@ -21,12 +21,6 @@
     "Description": {
       "type": "text"
     },
-    "Messages": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::message.message",
-      "inversedBy": "Commands"
-    },
     "Discord": {
       "type": "boolean",
       "default": false,
@@ -41,6 +35,22 @@
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "Media": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Messages": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::message.message",
+      "inversedBy": "Commands"
     },
     "Quizzes": {
       "type": "relation",
