@@ -26,12 +26,6 @@
       "target": "api::command.command",
       "mappedBy": "Messages"
     },
-    "Events": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::event.event",
-      "inversedBy": "Messages"
-    },
     "Schedules": {
       "type": "relation",
       "relation": "manyToMany",
