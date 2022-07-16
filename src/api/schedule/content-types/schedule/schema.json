@@ -13,7 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "Label": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "Recurrent": {
       "type": "boolean",
