@@ -38,6 +38,12 @@
       "relation": "manyToMany",
       "target": "api::command.command",
       "inversedBy": "Quizzes"
+    },
+    "Listenings": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::listening.listening",
+      "inversedBy": "Quizzes"
     }
   }
 }

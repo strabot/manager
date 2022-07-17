@@ -52,6 +52,12 @@
       "relation": "manyToMany",
       "target": "api::schedule.schedule",
       "inversedBy": "Surveys"
+    },
+    "Listenings": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::listening.listening",
+      "inversedBy": "Surveys"
     }
   }
 }

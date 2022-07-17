@@ -31,6 +31,12 @@
       "relation": "manyToMany",
       "target": "api::schedule.schedule",
       "mappedBy": "Messages"
+    },
+    "Listenings": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::listening.listening",
+      "inversedBy": "Messages"
     }
   }
 }
