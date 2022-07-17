@@ -2,7 +2,7 @@
   "name": "@strabot/manager",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "A Strabot manager",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
