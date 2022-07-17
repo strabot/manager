@@ -1,5 +1,5 @@
 {
-  "/events": {
+  "/chats": {
     "get": {
       "responses": {
         "200": {
@@ -7,7 +7,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/EventListResponse"
+                "$ref": "#/components/schemas/ChatListResponse"
               }
             }
           }
@@ -64,7 +64,7 @@
         }
       },
       "tags": [
-        "Event"
+        "Chat"
       ],
       "parameters": [
         {
@@ -148,7 +148,7 @@
           }
         }
       ],
-      "operationId": "get/events"
+      "operationId": "get/chats"
     },
     "post": {
       "responses": {
@@ -157,7 +157,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/EventResponse"
+                "$ref": "#/components/schemas/ChatResponse"
               }
             }
           }
@@ -214,23 +214,23 @@
         }
       },
       "tags": [
-        "Event"
+        "Chat"
       ],
       "parameters": [],
-      "operationId": "post/events",
+      "operationId": "post/chats",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/EventRequest"
+              "$ref": "#/components/schemas/ChatRequest"
             }
           }
         }
       }
     }
   },
-  "/events/{id}": {
+  "/chats/{id}": {
     "get": {
       "responses": {
         "200": {
@@ -238,7 +238,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/EventResponse"
+                "$ref": "#/components/schemas/ChatResponse"
               }
             }
           }
@@ -295,7 +295,7 @@
         }
       },
       "tags": [
-        "Event"
+        "Chat"
       ],
       "parameters": [
         {
@@ -309,7 +309,7 @@
           }
         }
       ],
-      "operationId": "get/events/{id}"
+      "operationId": "get/chats/{id}"
     },
     "put": {
       "responses": {
@@ -318,7 +318,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/EventResponse"
+                "$ref": "#/components/schemas/ChatResponse"
               }
             }
           }
@@ -375,7 +375,7 @@
         }
       },
       "tags": [
-        "Event"
+        "Chat"
       ],
       "parameters": [
         {
@@ -389,13 +389,13 @@
           }
         }
       ],
-      "operationId": "put/events/{id}",
+      "operationId": "put/chats/{id}",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/EventRequest"
+              "$ref": "#/components/schemas/ChatRequest"
             }
           }
         }
@@ -466,7 +466,7 @@
         }
       },
       "tags": [
-        "Event"
+        "Chat"
       ],
       "parameters": [
         {
@@ -480,7 +480,7 @@
           }
         }
       ],
-      "operationId": "delete/events/{id}"
+      "operationId": "delete/chats/{id}"
     }
   }
 }

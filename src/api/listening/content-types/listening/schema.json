@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "listenings",
+  "info": {
+    "singularName": "listening",
+    "pluralName": "listenings",
+    "displayName": "Listening"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Label": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Text": {
+      "type": "text",
+      "required": true
+    },
+    "Media": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Messages": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::message.message",
+      "inversedBy": "Listenings"
+    },
+    "Quizzes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::quiz.quiz",
+      "inversedBy": "Listenings"
+    },
+    "Surveys": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::survey.survey",
+      "inversedBy": "Listenings"
+    }
+  }
+}

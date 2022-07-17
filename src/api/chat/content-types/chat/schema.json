@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chats",
+  "info": {
+    "singularName": "chat",
+    "pluralName": "chats",
+    "displayName": "Chat",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Platform": {
+      "type": "enumeration",
+      "enum": [
+        "Telegram"
+      ],
+      "required": true
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Group",
+        "Private"
+      ],
+      "required": true
+    },
+    "Chat_ID": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

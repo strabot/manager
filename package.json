@@ -2,7 +2,7 @@
   "name": "@strabot/manager",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "A Strabot manager",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -14,11 +14,12 @@
     "rimraf": "^3.0.2"
   },
   "dependencies": {
-    "@strapi/plugin-documentation": "^4.2.2",
+    "@strapi/plugin-documentation": "^4.2.3",
     "@strapi/plugin-i18n": "4.2.2",
     "@strapi/plugin-users-permissions": "4.2.2",
     "@strapi/strapi": "4.2.2",
     "better-sqlite3": "7.4.6",
+    "pm2": "^5.2.0",
     "strapi-plugin-entity-relationship-chart": "^4.1.0"
   },
   "author": {

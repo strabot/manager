@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "discord_configs",
+  "info": {
+    "singularName": "discord-config",
+    "pluralName": "discord-configs",
+    "displayName": "Discord config",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Group_chats": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Private_chats": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Active": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Greetings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "general.greeting"
+    }
+  }
+}

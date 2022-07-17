@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
+    "Label": {
       "type": "string",
       "required": true
     },
@@ -24,18 +24,18 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::command.command",
-      "inversedBy": "Messages"
-    },
-    "Events": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::event.event",
-      "inversedBy": "Messages"
+      "mappedBy": "Messages"
     },
     "Schedules": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::schedule.schedule",
+      "mappedBy": "Messages"
+    },
+    "Listenings": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::listening.listening",
       "inversedBy": "Messages"
     }
   }

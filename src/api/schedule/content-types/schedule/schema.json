@@ -4,13 +4,18 @@
   "info": {
     "singularName": "schedule",
     "pluralName": "schedules",
-    "displayName": "Schedule"
+    "displayName": "Schedule",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
+    "Label": {
+      "type": "string",
+      "required": true
+    },
     "Recurrent": {
       "type": "boolean",
       "default": false,
@@ -23,8 +28,20 @@
     "Cron": {
       "type": "string"
     },
-    "Label": {
-      "type": "string"
+    "Discord": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Slack": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Telegram": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     },
     "Messages": {
       "type": "relation",
@@ -37,6 +54,12 @@
       "relation": "manyToMany",
       "target": "api::quiz.quiz",
       "inversedBy": "Schedules"
+    },
+    "Surveys": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::survey.survey",
+      "mappedBy": "Schedules"
     }
   }
 }

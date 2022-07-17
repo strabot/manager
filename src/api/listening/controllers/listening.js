@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- *  event controller
+ *  listening controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::event.event');
+module.exports = createCoreController('api::listening.listening');

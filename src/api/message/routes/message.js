@@ -6,4 +6,6 @@
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::message.message');
+module.exports = createCoreRouter('api::message.message', {
+  only: ['find', 'findOne']
+});

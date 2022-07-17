@@ -21,10 +21,47 @@
     "Description": {
       "type": "text"
     },
+    "Discord": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Slack": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Telegram": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Media": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
     "Messages": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::message.message",
+      "inversedBy": "Commands"
+    },
+    "Quizzes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::quiz.quiz",
+      "mappedBy": "Commands"
+    },
+    "Surveys": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::survey.survey",
       "inversedBy": "Commands"
     }
   }

@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "surveys",
+  "info": {
+    "singularName": "survey",
+    "pluralName": "surveys",
+    "displayName": "Survey",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Label": {
+      "type": "string",
+      "required": true
+    },
+    "Question": {
+      "type": "text",
+      "required": true
+    },
+    "Discord": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Slack": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Telegram": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Options": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.option",
+      "required": true
+    },
+    "Commands": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::command.command",
+      "mappedBy": "Surveys"
+    },
+    "Schedules": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::schedule.schedule",
+      "inversedBy": "Surveys"
+    },
+    "Listenings": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::listening.listening",
+      "inversedBy": "Surveys"
+    }
+  }
+}

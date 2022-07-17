@@ -4,7 +4,7 @@
   "info": {
     "singularName": "telegram-config",
     "pluralName": "telegram-configs",
-    "displayName": "Telegram Config",
+    "displayName": "Telegram config",
     "description": ""
   },
   "options": {
@@ -21,7 +21,11 @@
       "type": "string",
       "required": true
     },
-    "Direct_chats": {
+    "Username": {
+      "type": "string",
+      "required": false
+    },
+    "Private_chats": {
       "type": "boolean",
       "default": false,
       "required": true
@@ -30,6 +34,11 @@
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "Greetings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "general.greeting"
     }
   }
 }

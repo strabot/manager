@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "slack_configs",
+  "info": {
+    "singularName": "slack-config",
+    "pluralName": "slack-configs",
+    "displayName": "Slack config",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Active": {
+      "type": "boolean",
+      "default": false
+    },
+    "Channel_chats": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Private_chats": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Greetings": {
+      "displayName": "Greeting",
+      "type": "component",
+      "repeatable": false,
+      "component": "general.greeting"
+    }
+  }
+}
