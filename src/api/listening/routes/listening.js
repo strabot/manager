@@ -6,4 +6,6 @@
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::listening.listening');
+module.exports = createCoreRouter('api::listening.listening', {
+  only: ['find', 'findOne']
+});
