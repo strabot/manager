@@ -20,7 +20,8 @@
     "@strapi/strapi": "4.2.2",
     "better-sqlite3": "7.4.6",
     "pm2": "^5.2.0",
-    "strapi-plugin-entity-relationship-chart": "^4.1.0"
+    "strapi-plugin-entity-relationship-chart": "^4.1.0",
+    "strapi-plugin-generate-data": "^1.0.10"
   },
   "author": {
     "name": "Gabriel Rufino",
