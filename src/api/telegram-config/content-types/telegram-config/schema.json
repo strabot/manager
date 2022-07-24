@@ -34,11 +34,6 @@
       "type": "boolean",
       "default": false,
       "required": true
-    },
-    "Greetings": {
-      "type": "component",
-      "repeatable": false,
-      "component": "general.greeting"
     }
   }
 }
