@@ -11,10 +11,13 @@ module.exports = ({ env }) => ({
     }
     : env('DATABASE_DRIVE') === 'postgres' ?
     {
-      client: 'postgres'
+      client: 'postgres',
+      connection: env('DATABASE_URL', 'postgres://root:root@localhost:5432/strabot'),
+      useNullAsDefault: true
     }
     : ['mariadb', 'mysql'].includes(env('DATABASE_DRIVE')) &&
     {
-      client: 'mysql'
+      client: 'mysql',
+      useNullAsDefault: true
     }
 });
