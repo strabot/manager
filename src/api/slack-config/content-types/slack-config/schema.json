@@ -25,12 +25,6 @@
       "type": "boolean",
       "default": false,
       "required": true
-    },
-    "Greetings": {
-      "displayName": "Greeting",
-      "type": "component",
-      "repeatable": false,
-      "component": "general.greeting"
     }
   }
 }

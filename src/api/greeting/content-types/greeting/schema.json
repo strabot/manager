@@ -1,11 +1,26 @@
 {
-  "collectionName": "components_general_greetings",
+  "kind": "singleType",
+  "collectionName": "greetings",
   "info": {
-    "displayName": "Greetings",
-    "description": ""
+    "singularName": "greeting",
+    "pluralName": "greetings",
+    "displayName": "Greeting"
   },
-  "options": {},
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
   "attributes": {
+    "Media": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
     "Messages": {
       "type": "relation",
       "relation": "oneToMany",
@@ -20,16 +35,6 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::survey.survey"
-    },
-    "Media": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": true
     }
   }
 }
