@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-07-24T19:35:18.815Z"
+    "x-generation-date": "2022-07-25T12:08:56.071Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5369,7 +5369,7 @@
                 "attributes": {
                   "type": "object",
                   "properties": {
-                    "Group_chats": {
+                    "Channel_chats": {
                       "type": "boolean"
                     },
                     "Private_chats": {
@@ -5377,6 +5377,12 @@
                     },
                     "Active": {
                       "type": "boolean"
+                    },
+                    "Username": {
+                      "type": "string"
+                    },
+                    "Token": {
+                      "type": "string"
                     },
                     "createdAt": {
                       "type": "string",
@@ -5713,7 +5719,7 @@
               "attributes": {
                 "type": "object",
                 "properties": {
-                  "Group_chats": {
+                  "Channel_chats": {
                     "type": "boolean"
                   },
                   "Private_chats": {
@@ -5721,6 +5727,12 @@
                   },
                   "Active": {
                     "type": "boolean"
+                  },
+                  "Username": {
+                    "type": "string"
+                  },
+                  "Token": {
+                    "type": "string"
                   },
                   "createdAt": {
                     "type": "string",

@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Group_chats": {
+    "Channel_chats": {
       "type": "boolean",
       "default": false,
       "required": true
@@ -25,6 +25,14 @@
     "Active": {
       "type": "boolean",
       "default": false,
+      "required": true
+    },
+    "Username": {
+      "type": "string",
+      "required": false
+    },
+    "Token": {
+      "type": "string",
       "required": true
     }
   }
