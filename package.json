@@ -1,7 +1,7 @@
 {
   "name": "@strabot/manager",
   "private": true,
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A Strabot manager",
   "scripts": {
     "develop": "strapi develop",
@@ -11,6 +11,7 @@
     "reinstall": "npx rimraf node_modules && npm ci"
   },
   "devDependencies": {
+    "cypress": "^10.6.0",
     "rimraf": "^3.0.2"
   },
   "dependencies": {
