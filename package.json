@@ -1,7 +1,7 @@
 {
   "name": "@strabot/manager",
   "private": true,
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "A Strabot manager",
   "scripts": {
     "develop": "strapi develop",

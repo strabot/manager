@@ -19,7 +19,7 @@
     },
     "Token": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "Username": {
       "type": "string",
