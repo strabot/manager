@@ -1,11 +1,11 @@
 {
   "name": "@strabot/manager",
   "private": true,
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A Strabot manager",
   "scripts": {
     "develop": "strapi develop",
-    "start": "strapi start",
+    "start": "NODE_ENV=production strapi start",
     "build": "strapi build",
     "strapi": "strapi",
     "reinstall": "npx rimraf node_modules && npm ci"
@@ -15,10 +15,10 @@
     "rimraf": "^3.0.2"
   },
   "dependencies": {
-    "@strapi/plugin-documentation": "^4.5.3",
-    "@strapi/plugin-i18n": "^4.5.3",
-    "@strapi/plugin-users-permissions": "^4.5.3",
-    "@strapi/strapi": "^4.5.3",
+    "@strapi/plugin-documentation": "^4.6.1",
+    "@strapi/plugin-i18n": "^4.6.1",
+    "@strapi/plugin-users-permissions": "^4.6.1",
+    "@strapi/strapi": "^4.5.6",
     "better-sqlite3": "^7.6.2",
     "pm2": "^5.2.2",
     "strapi-plugin-entity-relationship-chart": "^4.1.0"
@@ -32,7 +32,7 @@
     "uuid": "526cbe95-124a-4dc2-a3bf-9b8b5223dfe8"
   },
   "engines": {
-    "node": ">=12.x.x <=16.x.x",
+    "node": ">=14.19.1 <=18.x.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT",
