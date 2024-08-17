@@ -16,15 +16,20 @@ WORKDIR /opt/app
 COPY package*.json ./
 RUN npm ci
 COPY . .
-RUN cp .env.example .env \
-    NODE_ENV=production npm run build 
+RUN NODE_ENV=production npm run build 
 # Remove NODE_ENV above?
 
 FROM node:20-alpine
 RUN apk add --no-cache vips-dev=8.15.2-r1
-ENV NODE_ENV=production
+
 WORKDIR /opt/app
 COPY --from=build /opt/app ./
+
+ENV NODE_ENV=production
+ENV HOST=0.0.0.0
+ENV PORT=1337
+ENV DATABASE_DRIVE=sqlite
+ENV DATABASE_URL=.tmp/data.db
 
 RUN chown -R node:node /opt/app
 USER node
