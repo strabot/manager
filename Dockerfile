@@ -16,12 +16,12 @@ WORKDIR /opt/app
 COPY package*.json ./
 RUN npm ci
 COPY . .
-RUN cp .env.example .env
-RUN NODE_ENV=production npm run build 
+RUN cp .env.example .env \
+    NODE_ENV=production npm run build 
 # Remove NODE_ENV above?
 
 FROM node:20-alpine
-RUN apk add --no-cache vips-dev
+RUN apk add --no-cache vips-dev=8.15.2-r1
 ENV NODE_ENV=production
 WORKDIR /opt/app
 COPY --from=build /opt/app ./
