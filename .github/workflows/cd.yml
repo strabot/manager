@@ -24,4 +24,4 @@ jobs:
         with:
           username: strabot
           password: ${{ secrets.DOCKER_HUB_TOKEN }}
-          repository: strabot/strabot-manager
+          repository: strabot/manager

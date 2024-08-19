@@ -38,7 +38,7 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/strabot/strabot-manager/issues"
+    "url": "https://github.com/strabot/manager/issues"
   },
-  "homepage": "https://github.com/strabot/strabot-manager#readme"
+  "homepage": "https://github.com/strabot/manager#readme"
 }
