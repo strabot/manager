@@ -6,7 +6,7 @@ RUN apk update && apk add --no-cache \
     autoconf=2.72-r0 \
     automake=1.16.5-r2 \
     zlib-dev=1.3.1-r1 \
-    libpng-dev=1.6.43-r0 \
+    libpng-dev=1.6.44-r0 \
     nasm=2.16.03-r0 \
     bash=5.2.26-r0 \
     vips-dev=8.15.2-r1
