@@ -13,11 +13,11 @@
     "cypress": "^10.11.0"
   },
   "dependencies": {
-    "@strapi/plugin-documentation": "^4.25.8",
-    "@strapi/plugin-i18n": "^4.25.8",
-    "@strapi/plugin-users-permissions": "^4.25.8",
+    "@strapi/plugin-documentation": "^4.25.14",
+    "@strapi/plugin-i18n": "^4.25.13",
+    "@strapi/plugin-users-permissions": "^4.25.14",
     "@strapi/strapi": "^4.5.6",
-    "better-sqlite3": "^11.1.2",
+    "better-sqlite3": "^11.5.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "5.3.4",
