@@ -16,6 +16,7 @@ jobs:
     name: Dockerfile CI
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - uses: gabrielrufino/dockerfile-ci@v2
         with:
           image-name: strabot/manager
