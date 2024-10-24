@@ -1,7 +1,7 @@
 {
   "name": "@strabot/manager",
   "private": true,
-  "version": "1.1.7",
+  "version": "1.1.8",
   "scripts": {
     "develop": "strapi develop",
     "start": "NODE_ENV=production strapi start",
