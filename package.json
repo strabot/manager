@@ -1,8 +1,7 @@
 {
   "name": "@strabot/manager",
   "private": true,
-  "version": "1.1.7",
-  "description": "A Strabot manager",
+  "version": "1.1.8",
   "scripts": {
     "develop": "strapi develop",
     "start": "NODE_ENV=production strapi start",
@@ -13,11 +12,11 @@
     "cypress": "^10.11.0"
   },
   "dependencies": {
-    "@strapi/plugin-documentation": "^4.25.4",
-    "@strapi/plugin-i18n": "^4.25.4",
-    "@strapi/plugin-users-permissions": "^4.25.4",
+    "@strapi/plugin-documentation": "^4.25.14",
+    "@strapi/plugin-i18n": "^4.25.13",
+    "@strapi/plugin-users-permissions": "^4.25.14",
     "@strapi/strapi": "^4.5.6",
-    "better-sqlite3": "^11.1.2",
+    "better-sqlite3": "^11.5.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "5.3.4",
@@ -33,12 +32,12 @@
     "uuid": "526cbe95-124a-4dc2-a3bf-9b8b5223dfe8"
   },
   "engines": {
-    "node": ">=14.19.1 <=18.x.x",
+    "node": ">=18.0.0 <=20.x.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/strabot/strabot-manager/issues"
+    "url": "https://github.com/strabot/manager/issues"
   },
-  "homepage": "https://github.com/strabot/strabot-manager#readme"
+  "homepage": "https://github.com/strabot/manager#readme"
 }
