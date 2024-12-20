@@ -6,10 +6,14 @@
     "develop": "strapi develop",
     "start": "NODE_ENV=production strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "prepare": "husky"
   },
   "devDependencies": {
-    "cypress": "^10.11.0"
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
+    "cypress": "^10.11.0",
+    "husky": "^9.1.7"
   },
   "dependencies": {
     "@strapi/plugin-documentation": "^4.25.18",
